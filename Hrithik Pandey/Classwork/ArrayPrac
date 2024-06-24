@@ -1,0 +1,38 @@
+class Nice{
+
+	public static void main(String arg[]){
+		int [] ques={72,51,30,17,13,47,31,7,15,3};
+		int [] ans= new int[9];
+		int x=0;
+		for(int i : ques)
+		{
+			if(i%2==1)
+			{	ans[x]=i*i;
+				x++;
+			}
+		}
+		int sum=0;
+		for(int i=0;i<ans.length;i++)
+			{
+				int left=i;
+				for(int j=i; j<ans.length;j++)
+				{
+					if(ans[left]>ans[j])
+						left=j;
+				}
+				 if (left != i)
+				 {
+					int temp = ans[i];
+					ans[i] = ans[left];
+					ans[left] = temp;
+				 }
+				 
+			}
+		for(int i : ans)
+		{
+			System.out.println(i);
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+}
