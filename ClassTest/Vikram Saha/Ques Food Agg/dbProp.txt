@@ -1,0 +1,5 @@
+#
+#Thu Jul 04 19:24:11 IST 2024
+pass=root
+user=postgres
+url=jdbc\:postgresql\://localhost\:5432/university
