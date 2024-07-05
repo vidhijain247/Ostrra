@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
   public static void main(String[] args) throws SQLException {
-    List<Item> itemList = prefillItems(); // Replace with your prefill method
+    List<Item> itemList = prefillItems(); 
 
     ItemDAO itemDAO = new ItemDAO();
 
